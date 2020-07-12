@@ -1,0 +1,85 @@
+{
+  "ciarancallaghan": {
+    "gender": "male",
+    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "socials": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/ciaran__callaghan/"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/ciaran-callaghan/"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/CiaranCallaghan94"
+      }
+    ],
+    "uname": "ciarancallaghan",
+    "name": { "title": "Mr", "first": "Ciaran", "last": "Callaghan" },
+    "email": "ciarancallaghan94@gmail.com",
+    "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
+    "phone": "+353833312550",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/52.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/52.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/52.jpg"
+    },
+    "nat": "IE"
+  },
+  "benlawless": {
+    "gender": "male",
+    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "socials": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/_mynameisben_/"
+      }
+    ],
+    "uname": "benlawless",
+    "name": { "title": "Mr", "first": "Ben", "last": "Lawless" },
+    "email": "TODO",
+    "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
+    "phone": "TODO",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/51.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/51.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/51.jpg"
+    },
+    "nat": "IE"
+  },
+  "jaypryor": {
+    "gender": "male",
+    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "socials": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/jaypryor/"
+      },
+      {
+        "name": "Spotify",
+        "link": "https://open.spotify.com/artist/1ZUpQr4VSnnP86WbaRRMpd"
+      },
+      {
+        "name": "YouTube",
+        "link": "https://www.youtube.com/channel/UCh8DCRERCyJAtBYkJr8Mcjg"
+      },
+      {
+        "name": "Website",
+        "link": "https://www.jaypryor.co/"
+      }
+    ],
+    "uname": "jaypryor",
+    "name": { "title": "Mr", "first": "Jamie", "last": "Pryor" },
+    "email": "TODO",
+    "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
+    "phone": "TODO",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/50.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/50.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
+    },
+    "nat": "IE"
+  }
+}

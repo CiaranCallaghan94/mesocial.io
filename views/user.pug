@@ -1,0 +1,24 @@
+extends layout.pug
+
+block content
+ main#main
+    h1.ui.center.aligned.header #{profile.name.first} #{profile.name.last}
+    .ui.container
+    table.ui.celled.table.center.aligned
+      div 
+        img.ui.mini.rounded.image(src=profile.picture.large)
+      p #{profile.bio}
+
+      thead
+        tr
+          th Social
+          th Link
+      tbody
+        for social in profile.socials
+          tr
+            td #{social.name}
+            td 
+              a(href=social.link ) #{social.link}
+      tfoot
+        tr
+          th(colspan='6')
