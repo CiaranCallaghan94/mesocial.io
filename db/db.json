@@ -1,19 +1,32 @@
 {
   "ciarancallaghan": {
     "gender": "male",
-    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "handle": "callo",
+    "bio": "Developer, Cloud Engineer and CEO of MeSocial. It is time we get online",
+    "callToAction": {
+      "name": "My Projects",
+      "link": "https://github.com/CiaranCallaghan94"
+    },
     "socials": [
       {
         "name": "Instagram",
-        "link": "https://www.instagram.com/ciaran__callaghan/"
+        "link": "https://www.instagram.com/ciaran__callaghan/",
+        "icon": "fab fa-instagram"
       },
       {
         "name": "LinkedIn",
-        "link": "https://www.linkedin.com/in/ciaran-callaghan/"
+        "link": "https://www.linkedin.com/in/ciaran-callaghan/",
+        "icon": "fab fa-linkedin"
       },
       {
         "name": "GitHub",
-        "link": "https://github.com/CiaranCallaghan94"
+        "link": "https://github.com/CiaranCallaghan94",
+        "icon": "fab fa-github"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Ciaran_Call94",
+        "icon": "fab fa-twitter"
       }
     ],
     "uname": "ciarancallaghan",
@@ -30,13 +43,19 @@
   },
   "benlawless": {
     "gender": "male",
-    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "handle": "benji",
+    "bio": "I am an actor, model and just overall a pleasure to be around. Much love <3",
     "socials": [
       {
         "name": "Instagram",
-        "link": "https://www.instagram.com/_mynameisben_/"
+        "link": "https://www.instagram.com/_mynameisben_/",
+        "icon": "fab fa-instagram"
       }
     ],
+    "callToAction": {
+      "name": "I'm a model",
+      "link": "https://www.instagram.com/_mynameisben_/"
+    },
     "uname": "benlawless",
     "name": { "title": "Mr", "first": "Ben", "last": "Lawless" },
     "email": "TODO",
@@ -51,25 +70,34 @@
   },
   "jaypryor": {
     "gender": "male",
-    "bio": "He picked up the burnt end of the branch and made a mark on the stone. Day 52 if the marks on the stone were accurate. He couldn't be sure. Day and nights had begun to blend together creating confusion, but he knew it was a long time. Much too long.",
+    "handle": "jaypryor",
+    "bio": "Music is my life, also like gaming with my pals. Up the Dubs!",
     "socials": [
       {
         "name": "Instagram",
-        "link": "https://www.instagram.com/jaypryor/"
+        "link": "https://www.instagram.com/jaypryor/",
+        "icon": "fab fa-twitter"
       },
       {
         "name": "Spotify",
-        "link": "https://open.spotify.com/artist/1ZUpQr4VSnnP86WbaRRMpd"
+        "link": "https://open.spotify.com/artist/1ZUpQr4VSnnP86WbaRRMpd",
+        "icon": "fab fa-spotify"
       },
       {
         "name": "YouTube",
-        "link": "https://www.youtube.com/channel/UCh8DCRERCyJAtBYkJr8Mcjg"
+        "link": "https://www.youtube.com/channel/UCh8DCRERCyJAtBYkJr8Mcjg",
+        "icon": "fab fa-youtube"
       },
       {
         "name": "Website",
-        "link": "https://www.jaypryor.co/"
+        "link": "https://www.jaypryor.co/",
+        "icon": "fas fa-home"
       }
     ],
+    "callToAction": {
+      "name": "New Track",
+      "link": "https://open.spotify.com/artist/1ZUpQr4VSnnP86WbaRRMpd"
+    },
     "uname": "jaypryor",
     "name": { "title": "Mr", "first": "Jamie", "last": "Pryor" },
     "email": "TODO",
@@ -79,6 +107,48 @@
       "large": "https://randomuser.me/api/portraits/men/50.jpg",
       "medium": "https://randomuser.me/api/portraits/med/men/50.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
+    },
+    "nat": "IE"
+  },
+  "endafallon": {
+    "gender": "male",
+    "handle": "fallon",
+    "bio": "Rat IRL and in league. See me on the decks in Maga, 2021!",
+    "callToAction": {
+      "name": "New Mix",
+      "link": "https://soundcloud.com/fallonsounds"
+    },
+    "socials": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/fallonmusic/",
+        "icon": "fab fa-instagram"
+      },
+      {
+        "name": "SoundCloud",
+        "link": "https://soundcloud.com/fallonsounds",
+        "icon": "fab fa-soundcloud"
+      },
+      {
+        "name": "Spotify",
+        "link": "https://open.spotify.com/artist/73LVVE6OYOwlXlIJAFNJdR",
+        "icon": "fab fa-spotify"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/FallonSounds",
+        "icon": "fab fa-twitter"
+      }
+    ],
+    "uname": "fallon",
+    "name": { "title": "Mr", "first": "Enda", "last": "Fallon" },
+    "email": "ciarancallaghan94@gmail.com",
+    "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
+    "phone": "+353833312550",
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/52.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/52.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/52.jpg"
     },
     "nat": "IE"
   }

@@ -4,6 +4,7 @@ const router = express.Router();
 
 const app = express();
 
+app.use(express.static(__dirname + "/public"));
 app.set("view engine", "pug");
 
 app.get("/", async (req, res) => {
