@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title MeSocial: #{profile.name.first} #{profile.name.last}
+    title MeSocial: #{user.primaryTitle}
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
@@ -102,19 +102,19 @@ html(lang='en')
       .masthead 
         h3.muted.title 
           a(href='/') MeSocial
-        if profile.verified === true
+        if user.verified === true
           h3.fas.fa-check.verified
       hr
       .jumbotron
-        h1 #{profile.primaryTitle}
+        h1 #{user.primaryTitle}
         h2
-          i #{profile.secondaryTitle}
+          i #{user.secondaryTitle}
         p.lead
-          | #{profile.bio}
-        a.btn.btn-large(href=profile.callToAction.link) #{profile.callToAction.name}
+          | #{user.bio}
+        a.btn.btn-large(href=user.callToAction.link) #{user.callToAction.name}
       hr
       div.socials
-        for social in profile.socials
+        for social in user.socials
           a(class=social.icon, href=social.link)
 
       //- .row-fluid.marketing
