@@ -9,10 +9,13 @@ html(lang='en')
     link(href='/css/bootstrap.css', rel='stylesheet')
     link(href="/css/fontawesome.min.css", rel="stylesheet")
     link(href="/css/all.min.css", rel="stylesheet")
+    link(href="/css/social-icons.css", rel="stylesheet")
+
     style(type='text/css').
       body {
       padding-top: 20px;
       padding-bottom: 40px;
+      background-color: #fcfcfc;
       }
       /* Custom container */
       .container-narrow {
@@ -27,6 +30,7 @@ html(lang='en')
       margin: 80px 0;
       text-align: center;
       }
+
       .jumbotron h1 {
       font-size: 70px;
       line-height: 1;
@@ -36,150 +40,45 @@ html(lang='en')
       .jumbotron h2 {
       font-size: 28px;
       line-height: 1;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #999999;
       }
+
       .jumbotron .btn {
       font-size: 21px;
       padding: 14px 24px;
       }
 
-      .fab, .fas {
-        padding: 20px;
-        font-size: 35px;
-        width: 35px;
-        text-align: center;
+      .btn, .btn:hover, .btn:active, .btn:visited {
+      background-color: #e88c15 !important;
+      background-image: none;
+      color: white;
+      }
+
+      .btn:hover {
+      opacity: 0.7;      
+      background-image: none;
+      color: white;
+      }
+
+      .verified {
+        float: right;
+        display: inline-block;
+        padding: 15px;
+        font-size: 25px;
+      }
+
+      .title {
+        display: inline-block;
+      }
+
+      .title a{
+        color: #999999;
+      }
+
+      .title a:hover{
         text-decoration: none;
-        margin: 5px 10px;
-        border-radius: 50%;
-      }
-
-      .fab:hover, .fas:hover {
-        opacity: 0.6;
-        color: white;
-        text-decoration: none;
-      }
-
-      .fa-instagram {
-        background: #E1306C;
-        color: white;
-      }
-
-      .fa-facebook {
-        background: #3B5998;
-        color: white;
-      }
-
-      .fa-twitter {
-        background: #55ACEE;
-        color: white;
-      }
-
-      .fa-github {
-        background: #211F1F;
-        color: white;
-      }
-
-      .fa-google {
-        background: #dd4b39;
-        color: white;
-      }
-
-      .fa-linkedin {
-        background: #007bb5;
-        color: white;
-      }
-
-      .fa-youtube {
-        background: #bb0000;
-        color: white;
-      }
-
-      .fa-pinterest {
-        background: #cb2027;
-        color: white;
-      }
-
-      .fa-snapchat-ghost {
-        background: #fffc00;
-        color: white;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      }
-
-      .fa-skype {
-        background: #00aff0;
-        color: white;
-      }
-
-      .fa-android {
-        background: #a4c639;
-        color: white;
-      }
-
-      .fa-dribbble {
-        background: #ea4c89;
-        color: white;
-      }
-
-      .fa-vimeo {
-        background: #45bbff;
-        color: white;
-      }
-
-      .fa-tumblr {
-        background: #2c4762;
-        color: white;
-      }
-
-      .fa-vine {
-        background: #00b489;
-        color: white;
-      }
-
-      .fa-foursquare {
-        background: #45bbff;
-        color: white;
-      }
-
-      .fa-stumbleupon {
-        background: #eb4924;
-        color: white;
-      }
-
-      .fa-flickr {
-        background: #f40083;
-        color: white;
-      }
-
-      .fa-yahoo {
-        background: #430297;
-        color: white;
-      }
-
-      .fa-soundcloud {
-        background: #ff5500;
-        color: white;
-      }
-
-      .fa-home {
-        background: #ff5500;
-        color: white;
-      }
-
-      .fa-reddit {
-        background: #ff5700;
-        color: white;
-      }
-      .fa-spotify {
-        background: #1DB954;
-        color: white;
-      }
-      .fa-rss {
-        background: #ff6600;
-        color: white;
-      }
-      .socials {
-        text-align: center;
+        opacity: 0.7;
       }
 
       .footer {
@@ -188,6 +87,7 @@ html(lang='en')
 
       .footer p {
         font-size: 1.2em;
+        font-weight: bold;
       }
 
     link(href='/css/bootstrap-responsive.css', rel='stylesheet')
@@ -200,15 +100,18 @@ html(lang='en')
   body
     .container-narrow
       .masthead 
-        h3.muted MeSocial
+        h3.muted.title 
+          a(href='/') MeSocial
+        if profile.verified === true
+          h3.fas.fa-check.verified
       hr
       .jumbotron
-        h1 #{profile.name.first} #{profile.name.last}
+        h1 #{profile.primaryTitle}
         h2
-          i #{profile.handle}
+          i #{profile.secondaryTitle}
         p.lead
           | #{profile.bio}
-        a.btn.btn-large.btn-success(href=profile.callToAction.link) #{profile.callToAction.name}
+        a.btn.btn-large(href=profile.callToAction.link) #{profile.callToAction.name}
       hr
       div.socials
         for social in profile.socials

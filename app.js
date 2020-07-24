@@ -11,7 +11,8 @@ app.get("/", async (req, res) => {
   res.render("index");
 });
 
-router.get("/profiles/:uname", async (req, res) => {
+router.get("/:uname", async (req, res) => {
+  // const userData = getUserData(req.params.uname);
   const url = "http://localhost:3001/" + req.params.uname;
   const query = await axios.get(url);
 

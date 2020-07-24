@@ -1,8 +1,10 @@
 {
   "ciarancallaghan": {
-    "gender": "male",
-    "handle": "callo",
-    "bio": "Developer, Cloud Engineer and CEO of MeSocial. It is time we get online",
+    "uname": "ciarancallaghan",
+    "verified": true,
+    "primaryTitle": "Ciaran Callaghan",
+    "secondaryTitle": "callo",
+    "bio": "Developer, Cloud Engineer and CEO of MeSocial. It is time we all get online.",
     "callToAction": {
       "name": "My Projects",
       "link": "https://github.com/CiaranCallaghan94"
@@ -29,21 +31,16 @@
         "icon": "fab fa-twitter"
       }
     ],
-    "uname": "ciarancallaghan",
-    "name": { "title": "Mr", "first": "Ciaran", "last": "Callaghan" },
+    "name": { "first": "Ciaran", "last": "Callaghan" },
     "email": "ciarancallaghan94@gmail.com",
     "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
-    "phone": "+353833312550",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/men/52.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/52.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/52.jpg"
-    },
-    "nat": "IE"
+    "phone": "+353833312550"
   },
   "benlawless": {
-    "gender": "male",
-    "handle": "benji",
+    "uname": "benlawless",
+    "verified": true,
+    "primaryTitle": "Ben Lawless",
+    "secondaryTitle": "@rizzie_dascle",
     "bio": "I am an actor, model and just overall a pleasure to be around. Much love <3",
     "socials": [
       {
@@ -56,21 +53,16 @@
       "name": "I'm a model",
       "link": "https://www.instagram.com/_mynameisben_/"
     },
-    "uname": "benlawless",
-    "name": { "title": "Mr", "first": "Ben", "last": "Lawless" },
+    "name": { "first": "Ben", "last": "Lawless" },
     "email": "TODO",
     "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
-    "phone": "TODO",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/men/51.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/51.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/51.jpg"
-    },
-    "nat": "IE"
+    "phone": "TODO"
   },
   "jaypryor": {
-    "gender": "male",
-    "handle": "jaypryor",
+    "uname": "jaypryor",
+    "verified": false,
+    "primaryTitle": "Jay Pryor",
+    "secondaryTitle": "Jamie Pryor",
     "bio": "Music is my life, also like gaming with my pals. Up the Dubs!",
     "socials": [
       {
@@ -98,21 +90,16 @@
       "name": "New Track",
       "link": "https://open.spotify.com/artist/1ZUpQr4VSnnP86WbaRRMpd"
     },
-    "uname": "jaypryor",
-    "name": { "title": "Mr", "first": "Jamie", "last": "Pryor" },
+    "name": { "first": "Jamie", "last": "Pryor" },
     "email": "TODO",
     "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
-    "phone": "TODO",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/men/50.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/50.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/50.jpg"
-    },
-    "nat": "IE"
+    "phone": "TODO"
   },
   "endafallon": {
-    "gender": "male",
-    "handle": "fallon",
+    "uname": "fallon",
+    "verified": true,
+    "primaryTitle": "Fallon",
+    "secondaryTitle": "Enda Fallon",
     "bio": "Rat IRL and in league. See me on the decks in Maga, 2021!",
     "callToAction": {
       "name": "New Mix",
@@ -140,16 +127,41 @@
         "icon": "fab fa-twitter"
       }
     ],
-    "uname": "fallon",
-    "name": { "title": "Mr", "first": "Enda", "last": "Fallon" },
+    "name": { "first": "Enda", "last": "Fallon" },
     "email": "ciarancallaghan94@gmail.com",
     "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
-    "phone": "+353833312550",
-    "picture": {
-      "large": "https://randomuser.me/api/portraits/men/52.jpg",
-      "medium": "https://randomuser.me/api/portraits/med/men/52.jpg",
-      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/52.jpg"
+    "phone": "+353833312550"
+  },
+  "emermooney": {
+    "uname": "emermooney",
+    "verified": true,
+    "primaryTitle": "Emer Mooney",
+    "secondaryTitle": "emz",
+    "bio": "CEO of Animal of the Day, social media queen!",
+    "callToAction": {
+      "name": "Buy some Merch",
+      "link": "https://www.animaloftheday.com/shop"
     },
-    "nat": "IE"
+    "socials": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/emermoon/",
+        "icon": "fab fa-instagram"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Emer___M",
+        "icon": "fab fa-twitter"
+      },
+      {
+        "name": "Website",
+        "link": "https://www.animaloftheday.com/",
+        "icon": "fas fa-home"
+      }
+    ],
+    "name": { "first": "Emer", "last": "Mooney" },
+    "email": "ciarancallaghan94@gmail.com",
+    "dob": { "date": "1968-05-16T08:35:45.996Z", "age": 52 },
+    "phone": "+353833312550"
   }
 }
