@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/app.js"
+    "start": "SET NODE_ENV=dev && nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/CiaranCallaghan94/mesocial.io#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "aws-sdk": "^2.719.0",
     "express": "^4.17.1",
     "pug": "^3.0.0"
   }

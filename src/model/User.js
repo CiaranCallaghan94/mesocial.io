@@ -1,4 +1,5 @@
-const axios = require("axios");
+const db = require("../db");
+const config = require("../config");
 
 const User = function (username) {
   this.username = username;
@@ -11,25 +12,45 @@ const User = function (username) {
 
 User.prototype.getUserData = function () {
   return new Promise((resolve, reject) => {
-    const url = "http://localhost:3001/" + this.username;
-    const query = axios
-      .get(url)
-      .then((response) => {
-        this.data = response.data;
-        this.error = {
-          isError: false,
-          errorMessage: "",
-        };
-        resolve();
-      })
-      .catch((errorMessage) => {
+    var database = db.getDb();
+
+    var params = {
+      TableName: config.database.table,
+      KeyConditionExpression: "UserName = :name",
+      ExpressionAttributeValues: {
+        ":name": this.username,
+      },
+    };
+
+    database.query(params, (err, data) => {
+      console.log(data);
+      console.log(err);
+      if (err) {
         this.data = {};
         this.error = {
           isError: true,
-          errorMessage: errorMessage,
+          errorMessage: err,
         };
         reject();
-      });
+      } else {
+        if (data.Items.length === 0) {
+          this.data = {};
+          this.error = {
+            isError: true,
+            errorMessage: "User does not exist",
+          };
+          reject();
+        } else {
+          console.log(data.Items[0]);
+          this.data = data.Items[0];
+          this.error = {
+            isError: false,
+            errorMessage: "",
+          };
+          resolve();
+        }
+      }
+    });
   });
 };
 

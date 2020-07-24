@@ -1,0 +1,39 @@
+{
+  "TableName": "MeSocialUsers",
+  "Item": {
+    "UserName": "ciarancallaghan",
+    "Verified": true,
+    "PrimaryTitle": "Ciaran Callaghan",
+    "SecondaryTitle": "callo",
+    "Bio": "Developer, Cloud Engineer and CEO of MeSocial. It is time we all get online.",
+    "CallToAction": {
+      "Comment": "My Projects",
+      "Link": "https://github.com/CiaranCallaghan94"
+    },
+    "Socials": [
+      {
+        "Name": "Instagram",
+        "Link": "https://www.instagram.com/ciaran__callaghan/",
+        "Icon": "fab fa-instagram"
+      },
+      {
+        "Name": "LinkedIn",
+        "Link": "https://www.linkedin.com/in/ciaran-callaghan/",
+        "Icon": "fab fa-linkedin"
+      },
+      {
+        "Name": "GitHub",
+        "Link": "https://github.com/CiaranCallaghan94",
+        "Icon": "fab fa-github"
+      },
+      {
+        "Name": "Twitter",
+        "Link": "https://twitter.com/Ciaran_Call94",
+        "Icon": "fab fa-twitter"
+      }
+    ],
+    "Name": { "First": "Ciaran", "Last": "Callaghan" },
+    "created": { "N": "1595625889121" },
+    "modified": { "N": "1595625889121" }
+  }
+}
