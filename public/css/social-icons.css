@@ -12,11 +12,20 @@
 .fab:hover,
 .fas:hover {
   opacity: 0.7;
-  color: white;
   text-decoration: none;
+  color: white;
+}
+
+.fa-user {
+  background: #5a3d55;
+  color: white;
 }
 
 .fa-check {
+  color: #00d5ed;
+}
+
+.fa-check:hover {
   color: #00d5ed;
 }
 

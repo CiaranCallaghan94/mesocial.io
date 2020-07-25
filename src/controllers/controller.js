@@ -1,6 +1,7 @@
 const User = require("../model/User");
 
 exports.renderHomePage = (req, res) => {
+  res.status(200);
   res.render("index");
 };
 
@@ -11,9 +12,12 @@ exports.renderUser = (req, res) => {
   user
     .getUserData()
     .then(() => {
+      res.status(200);
       res.render("user", { user: user.data });
     })
     .catch(() => {
-      res.send(user.error.errorMessage);
+      res.status(404);
+      res.render("userNotFound", { user: user.username });
+      console.log(user.error.errorMessage);
     });
 };

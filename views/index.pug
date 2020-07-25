@@ -7,40 +7,11 @@ html(lang='en')
     meta(name='description', content='')
     meta(name='author', content='')
     link(href='/css/bootstrap.css', rel='stylesheet')
-    style(type='text/css').
-      body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      }
-      /* Custom container */
-      .container-narrow {
-      margin: 0 auto;
-      max-width: 700px;
-      }
-      .container-narrow > hr {
-      margin: 30px 0;
-      }
-      /* Main marketing message and sign up button */
-      .jumbotron {
-      margin: 60px 0;
-      text-align: center;
-      }
-      .jumbotron h1 {
-      font-size: 72px;
-      line-height: 1;
-      }
-      .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-      }
-      /* Supporting marketing content */
-      .marketing {
-      margin: 60px 0;
-      }
-      .marketing p + h4 {
-      margin-top: 28px;
-      }
+    link(href="/css/fontawesome.min.css", rel="stylesheet")
+    link(href="/css/all.min.css", rel="stylesheet")
+    link(href="/css/social-icons.css", rel="stylesheet")
     link(href='/css/bootstrap-responsive.css', rel='stylesheet')
+    link(href="/css/style.css", rel="stylesheet")
     link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
     link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
     link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
@@ -48,22 +19,23 @@ html(lang='en')
     link(rel='shortcut icon', href='/ico/favicon.png')
   body
     .container-narrow
-      .masthead
-        ul.nav.nav-pills.pull-right
-          li.active
-            a(href='#') home
-          li
-            a(href='https://twitter.com/Ciaran_Call94') twitter
-          li
-            a(href='http://github.com/CiaranCallaghan94') github
+      .masthead          
         h3.muted MeSocial
       hr
       .jumbotron
-        h1 MeSocial, get online
+        h1 MeSocial
         p.lead
-          | Create your online presence in less then minutes for FREE
-        a.btn.btn-large.btn-success(href="http://localhost:3000/user/ciarancallaghan") Ciaran Callaghan
+          | Create your online landing page in 1 minute for <b>FREE</b>
+        a.btn.btn-large.btn-success(href="https://admin.mesocial.io/") Get Online
       hr
+      div.socials
+        a(class="fas fa-home", href="https://admin.mesocial.io/")
+        a(class="fas fa-user", href="/user/ciarancallaghan")
+        a(class="fab fa-instagram", href="https://twitter.com/mesocial")
+        a(class="fab fa-twitter", href="https://twitter.com/mesocial")
+
+      hr
+
       .row-fluid.marketing
         .span6
           h4 Starter template
@@ -100,5 +72,5 @@ html(lang='en')
             a(href='/sticky') View&gt;&gt;
       hr
       .footer
-        p © Company 2020
+        p © MeSocial 2020
   include partials/scripts

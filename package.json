@@ -24,6 +24,7 @@
   "homepage": "https://github.com/CiaranCallaghan94/mesocial.io#readme",
   "dependencies": {
     "aws-sdk": "^2.719.0",
+    "aws-serverless-express": "^3.3.8",
     "express": "^4.17.1",
     "pug": "^3.0.0"
   }

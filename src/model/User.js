@@ -12,6 +12,7 @@ const User = function (username) {
 
 User.prototype.getUserData = function () {
   return new Promise((resolve, reject) => {
+    console.log("Sending request to DB");
     var database = db.getDb();
 
     var params = {
@@ -23,7 +24,6 @@ User.prototype.getUserData = function () {
     };
 
     database.query(params, (err, data) => {
-      console.log(data);
       console.log(err);
       if (err) {
         this.data = {};

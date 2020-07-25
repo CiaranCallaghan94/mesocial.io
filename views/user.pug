@@ -10,87 +10,9 @@ html(lang='en')
     link(href="/css/fontawesome.min.css", rel="stylesheet")
     link(href="/css/all.min.css", rel="stylesheet")
     link(href="/css/social-icons.css", rel="stylesheet")
-
-    style(type='text/css').
-      body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      background-color: #fcfcfc;
-      }
-      /* Custom container */
-      .container-narrow {
-      margin: 0 auto;
-      max-width: 700px;
-      }
-      .container-narrow > hr {
-      margin: 30px 0;
-      }
-      /* Main marketing message and sign up button */
-      .jumbotron {
-      margin: 80px 0;
-      text-align: center;
-      }
-
-      .jumbotron h1 {
-      font-size: 70px;
-      line-height: 1;
-      margin-bottom: 10px;
-      }
-
-      .jumbotron h2 {
-      font-size: 28px;
-      line-height: 1;
-      margin-bottom: 20px;
-      color: #999999;
-      }
-
-      .jumbotron .btn {
-      font-size: 21px;
-      padding: 14px 24px;
-      }
-
-      .btn, .btn:hover, .btn:active, .btn:visited {
-      background-color: #e88c15 !important;
-      background-image: none;
-      color: white;
-      }
-
-      .btn:hover {
-      opacity: 0.7;      
-      background-image: none;
-      color: white;
-      }
-
-      .verified {
-        float: right;
-        display: inline-block;
-        padding: 15px;
-        font-size: 25px;
-      }
-
-      .title {
-        display: inline-block;
-      }
-
-      .title a{
-        color: #999999;
-      }
-
-      .title a:hover{
-        text-decoration: none;
-        opacity: 0.7;
-      }
-
-      .footer {
-        text-align: center;
-      }
-
-      .footer p {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
     link(href='/css/bootstrap-responsive.css', rel='stylesheet')
+    link(href="/css/style.css", rel="stylesheet")
+
     link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
     link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
     link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
@@ -103,7 +25,7 @@ html(lang='en')
         h3.muted.title 
           a(href='/') MeSocial
         if user.Verified === true
-          h3.fas.fa-check.verified
+          i.fas.fa-check.verified
       hr
       .jumbotron
         h1 #{user.PrimaryTitle}
