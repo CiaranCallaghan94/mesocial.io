@@ -2,3 +2,4 @@ node_modules/
 localDynamo
 .vscode/
 shared-local-instance.db
+.creds/

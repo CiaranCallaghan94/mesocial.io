@@ -8,11 +8,13 @@ exports.renderHomePage = (req, res) => {
 exports.renderUser = (req, res) => {
   const { uname: username } = req.params;
   const user = new User(username);
+  console.log(username);
   // Creates User Object then gets UserData from DynamoDB
   user
     .getUserData()
     .then(() => {
       res.status(200);
+      console.log(user.data);
       res.render("user", { user: user.data });
     })
     .catch(() => {
