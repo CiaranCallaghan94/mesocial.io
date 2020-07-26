@@ -3,3 +3,4 @@ localDynamo
 .vscode/
 shared-local-instance.db
 .creds/
+etc/
