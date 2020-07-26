@@ -1,4 +1,4 @@
 node_modules/
-localDynamo
 .vscode/
-etc/
+.gitignore
+.elasticbeanstalk/
