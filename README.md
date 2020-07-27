@@ -11,7 +11,7 @@ java -D"java.library.path=./localDynamo/DynamoDBLocal_lib" -jar localDynamo/Dyna
 Add User to DB:
 aws dynamodb put-item --cli-input-json "file://C:\Users\Ciaran Callaghan\Documents\Development\mesocial.io\localDynamo\User.json"
 
-EC2 Instance Commands:
+EC2 Instance Commands to Run:
 
 - sudo yum update
 - sudo yum install git
@@ -24,3 +24,9 @@ EC2 Instance Commands:
 - sudo npm install forever -g
 - npm install forever-monitor
 - forever start src/app.js
+
+EC2 Commands to deploy changes:
+
+- cd mesocial.io/
+- git pull
+- forever restartall
