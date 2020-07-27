@@ -87,6 +87,11 @@ body {
   opacity: 0.7;
 }
 
+.lead {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+
 .footer {
   text-align: center;
   margin: 35px 0 15px 0;
