@@ -99,6 +99,21 @@ body {
   flex-wrap: wrap;
 }
 
+.social h6 {
+  visibility: hidden;
+  font-size: 12.5px;
+}
+
+.social a:hover + h6 {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+  .social h6 {
+    visibility: visible;
+  }
+}
+
 .footer {
   text-align: center;
   margin: 35px 0 15px 0;
