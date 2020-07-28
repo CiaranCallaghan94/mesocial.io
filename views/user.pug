@@ -40,7 +40,9 @@ html(lang='en')
       hr
       div.socials
           for social in user.Socials
-            a(class=social.Icon, href=social.Link)
+            div.social
+              a(class=social.Icon, href=social.Link)
+              h6 #{social.Name}
 
       //- .row-fluid.marketing
       //-   .span6
