@@ -36,12 +36,12 @@ html(lang='en')
         p.lead
           | #{user.Bio}
         if user.CallToAction !== undefined
-          a.btn.btn-large(href=user.CallToAction.Link) #{user.CallToAction.Comment}
+          a.btn.btn-large(href=user.CallToAction.Link target='_blank') #{user.CallToAction.Comment}
       hr
       div.socials
           for social in user.Socials
             div.social
-              a(class=social.Icon, href=social.Link)
+              a(class=social.Icon href=social.Link target='_blank')
               h6 #{social.Name}
 
       //- .row-fluid.marketing
