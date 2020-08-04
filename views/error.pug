@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title MeSocial: #{user.PrimaryTitle}
+    title MeSocial: #{statusCode}
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
@@ -32,9 +32,9 @@ html(lang='en')
           a(href='/') MeSocial
       hr
       .jumbotron
-        h1 404
+        h1 #{statusCode}
         h2
-          i User not found: #{user}
+          i #{errorMessage}
         a.btn.btn-large.notfound-btn(href="/") Back to MeSocial
       hr
       .footer

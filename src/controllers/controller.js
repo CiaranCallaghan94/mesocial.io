@@ -22,6 +22,9 @@ exports.renderUser = (req, res) => {
     })
     .catch(() => {
       res.status(404);
-      res.render("userNotFound", { user: user.username });
+      res.render("error", {
+        statusCode: "400",
+        errorMessage: "User not found: " + user.username,
+      });
     });
 };
