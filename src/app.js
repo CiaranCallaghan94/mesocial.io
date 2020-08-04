@@ -1,6 +1,12 @@
 const express = require("express");
+const helmet = require("helmet");
+const morgan = require("morgan");
+
 const app = express();
 const router = require("./router");
+
+app.use(helmet());
+app.use(morgan("combined"));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
