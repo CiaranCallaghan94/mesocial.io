@@ -1,21 +1,7 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    title MeSocial: #{statusCode}
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    link(href='/css/bootstrap.css', rel='stylesheet')
-    link(href="/css/fontawesome.min.css", rel="stylesheet")
-    link(href="/css/all.min.css", rel="stylesheet")
-    link(href="/css/social-icons.css", rel="stylesheet")
-    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
-    link(href="/css/style.css", rel="stylesheet")
-    link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon.png')
-    link(rel='shortcut icon', href='/ico/favicon.png')
+extends layout.pug
 
-    style(type='text/css').
+block append head
+  style(type='text/css').
       .btn,
       .btn:hover,
       .btn:active,
@@ -25,18 +11,13 @@ html(lang='en')
         color: white;
       }
 
-  body
-    .container-narrow
-      .masthead 
-        h3.muted.title 
-          a(href='/') MeSocial
-      hr
-      .jumbotron
-        h1 #{statusCode}
-        h2
-          i #{errorMessage}
-        a.btn.btn-large.notfound-btn(href="/") Back to MeSocial
-      hr
-      .footer
-        p © MeSocial 2020
-  include ./partials/scripts
+block content
+  .masthead 
+    h3.muted.title 
+      a(href='/') MeSocial
+  hr
+  .jumbotron
+    h1 #{statusCode}
+    h2
+      i #{errorMessage}
+    a.btn.btn-large.notfound-btn(href="/") Back to MeSocial

@@ -1,71 +1,46 @@
-doctype html
-html(lang='en')
-  head
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-173570067-1')
-    script.
-           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-173570067-1');
-      
-    meta(charset='utf-8')
-    title MeSocial
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='Your very own online landing page.')
-    meta(name='author', content='Ciaran Callagan')
-    link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href="/css/fontawesome.min.css", rel="stylesheet")
-    link(href="/css/all.min.css", rel="stylesheet")
-    link(href="/css/social-icons.css", rel="stylesheet")
-    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
-    link(href="/css/style.css", rel="stylesheet")
-    link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon.png')
-    link(rel='shortcut icon', href='/ico/favicon.png')
-  body
-    .container-narrow
-      .masthead          
+extends layout.pug
+
+block content
+  .container-narrow
+      .masthead 
         h3.muted.title 
           a(href='/') MeSocial
       hr
-      .jumbotron
-        h1 MeSocial
-        p.lead
-          | All of your online activity in one place
-        a.btn.btn-large(href="/create") Create a page
-      hr
-      div.description
-        div
-          h3 Why MeSocial
-        div
-          p
-            | MeSocial is a single place for all your online profiles. No longer do you need to share or advertise all your different platforms, simply proe your MeSocial and people will be able to keep updated with you online.
-      hr
-      div
-        div
-          h3 Check it out
-        div.otherprofiles
-          .card.otherprofile
-            .card-header  
-              h5 Ciaran Callaghan
-            .card-body
-              p.card-text
-                | CEO of MeSocial. Check out their profile.
-              a.btn(href='/u/ciarancallaghan') Check Out
-          .card.otherprofile
-              .card-header
-                h5 Ben Lawless
-              .card-body
-                p.card-text
-                  | ACTOR • MUSICIAN • WRITER
-                a.btn(href='/u/benlawless') Check Out
-          .card.otherprofile
-            .card-header  
-              h5 Enda Fallon
-            .card-body
-              p.card-text
-                | Irish DJ/ Producer. Check out his latest work!
-              a.btn(href='/u/endafallon') Check Out
-
-      .footer
-        p © MeSocial 2020
-  include partials/scripts
+  .jumbotron
+    h1 MeSocial
+    p.lead
+      | All of your online activity in one place
+    a.btn.btn-large(href="/create") Create a page
+  hr
+  div.description
+    div
+      h3 Why MeSocial
+    div
+      p
+        | MeSocial is a single place for all your online profiles. No longer do you need to share or advertise all your different platforms, simply proe your MeSocial and people will be able to keep updated with you online.
+  hr
+  div
+    div
+      h3 Check it out
+    div.otherprofiles
+      .card.otherprofile
+        .card-header  
+          h5 Ciaran Callaghan
+        .card-body
+          p.card-text
+            | CEO of MeSocial. Check out their profile.
+          a.btn(href='/u/ciarancallaghan') Check Out
+      .card.otherprofile
+          .card-header
+            h5 Ben Lawless
+          .card-body
+            p.card-text
+              | ACTOR • MUSICIAN • WRITER
+            a.btn(href='/u/benlawless') Check Out
+      .card.otherprofile
+        .card-header  
+          h5 Enda Fallon
+        .card-body
+          p.card-text
+            | Irish DJ/ Producer. Check out his latest work!
+          a.btn(href='/u/endafallon') Check Out
