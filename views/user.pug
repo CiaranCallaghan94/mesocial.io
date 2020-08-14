@@ -5,20 +5,20 @@ block content
     .masthead 
       h3.muted.title 
         a(href='/') MeSocial
-      if user.Verified === true
+      if user.verified === true
         i.fas.fa-check.verified
     hr
     .jumbotron
-      h1 #{user.PrimaryTitle}
+      h1 #{user.primaryTitle}
       h2
-        i #{user.SecondaryTitle}
+        i #{user.secondaryTitle}
       p.lead
-        | #{user.Bio}
-      if user.CallToAction !== undefined
-        a.btn.btn-large(href=user.CallToAction.Link target='_blank') #{user.CallToAction.Comment}
+        | #{user.bio}
+      if user.callToAction !== undefined
+        a.btn.btn-large(href=user.callToAction.Link target='_blank') #{user.callToAction.heading}
     hr
     div.socials
-        for social in user.Socials
+        for social in user.socials
           div.social
-            a(class=social.Icon href=social.Link target='_blank')
-            h6 #{social.Name}
+            a(class=social.css href=social.link target='_blank')
+            h6 #{social.name}

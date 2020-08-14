@@ -16,7 +16,7 @@ User.prototype.getUserData = function () {
 
     var params = {
       TableName: config.database.table,
-      KeyConditionExpression: "UserName = :name",
+      KeyConditionExpression: "username = :name",
       ExpressionAttributeValues: {
         ":name": this.username,
       },
@@ -24,6 +24,7 @@ User.prototype.getUserData = function () {
 
     database.query(params, (err, data) => {
       if (err) {
+        console.log(err);
         this.data = {};
         this.error = {
           isError: true,

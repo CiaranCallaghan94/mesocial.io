@@ -12,7 +12,7 @@ exports.renderCreateUser = (req, res) => {
 
 exports.renderUser = (req, res) => {
   const { uname: username } = req.params;
-  const user = new User(username);
+  const user = new User(username.toLowerCase());
   // Creates User Object then gets UserData from DynamoDB
   user
     .getUserData()
@@ -20,7 +20,8 @@ exports.renderUser = (req, res) => {
       res.status(200);
       res.render("user", { user: user.data });
     })
-    .catch(() => {
+    .catch((err) => {
+      console.log(err);
       res.status(404);
       res.render("error", {
         statusCode: "400",
