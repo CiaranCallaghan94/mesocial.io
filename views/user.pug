@@ -15,7 +15,7 @@ block content
       p.lead
         | #{user.bio}
       if user.callToAction !== undefined
-        a.btn.btn-large(href=user.callToAction.Link target='_blank') #{user.callToAction.heading}
+        a.btn.btn-large(href=user.callToAction.link target='_blank') #{user.callToAction.heading}
     hr
     div.socials
         for social in user.socials
