@@ -3,14 +3,61 @@ extends layout.pug
 block content
   .container-narrow
       .masthead 
-        h3.muted.title 
-          a(href='/') MeSocial
+        a(href='/')
+            img(slot='logo', src='/img/mesocial.png', height='60', width='60')
+            h3.muted.title MeSocial
+
+        a.home(href='https://admin.mesocial.io/')
+          h3.homebutton 🏠
+
       hr
   .jumbotron
     h1 MeSocial
     p.lead
-      | All of your online activity in one place
-    a.btn.btn-large(href="https://admin.mesocial.io/") Create a page
+      | A home for all of your online profiles 🏠
+    div.searchbar
+        input(type='text', placeholder='Search for a MeSocial User', name='search', id='search')
+        button(type='submit' id='search-button')
+          i.fa.fa-search
+    br
+    a.btn.btn-large(href="https://admin.mesocial.io/") Create your page
+  div
+    div
+      h3(style='text-align: center;') Check out some MeSocial Profiles
+    div.otherprofiles
+      .card.otherprofile
+        .card-header  
+          a.btn.button__blue(href='/u/ciarancallaghan') 
+            i.material-icons(style='font-size:60px;color:white;') person
+          h5 Ciaran Callaghan
+          
+        .card-body
+          p.card-text
+            | CEO of MeSocial. Check out their profile.
+      .card.otherprofile
+        .card-header
+          a.btn.button__pink(href='/u/benlawless')
+            i.material-icons(style='font-size:60px;color:white;') person
+          h5 Ben Lawless
+        .card-body
+          p.card-text
+            | ACTOR • MUSICIAN • WRITER
+      .card.otherprofile
+        .card-header
+          a.btn.button__green(href='/u/endafallon')
+            i.material-icons(style='font-size:60px;color:white;') person
+          h5 Enda Fallon
+        .card-body
+          p.card-text
+            | Irish DJ/ Producer. Check out his latest work!
+      .card.otherprofile
+        .card-header
+          a.btn.button__red(href='/u/spooks')
+            i.material-icons(style='font-size:60px;color:white;') person
+          h5 Martin Green
+        .card-body
+          p.card-text
+            | Esports professional/ Influencer
   hr
   div.description
     div.description-heading
@@ -19,46 +66,16 @@ block content
       p
         | MeSocial is your one-stop online base for all your social networks. With your MeSocial profile, gone are the days of sharing and advertising multiple platforms! Simply share a link to your MeSocial and people will be able to keep updated with you online.
 
-  div.description
-    div.description-heading
-      h3 Why MeSocial?
-    div
-      p
-        | MeSocial is a single place for all your online profiles. No longer do you need to share or advertise all your different platforms, simply provide your MeSocial and people will be able to keep updated with you online.
+  hr
 
   div.description
     div.description-heading
       h3 MeSocial Benefits
     div
       ul.list-group
+        li.list-group-item It is FREE... why not?
         li.list-group-item Make a page within minutes!
+        li.list-group-item MeSocial is your online home.
         li.list-group-item Simple and dynamic functionality.
-        li.list-group-item Grow your online presence by sharing your MeSocial profile.
+        li.list-group-item Grow your online presence across all platforms by sharing your MeSocial profile.
         li.list-group-item Continue to grow your online presence across any site and platform, allowing people to find you in a single place.
-
-  hr
-  div
-    div
-      h3 Check it out
-    div.otherprofiles
-      .card.otherprofile
-        .card-header  
-          h5 Ciaran Callaghan
-        .card-body
-          p.card-text
-            | CEO of MeSocial. Check out their profile.
-          a.btn(href='/u/ciarancallaghan') Check Out
-      .card.otherprofile
-          .card-header
-            h5 Ben Lawless
-          .card-body
-            p.card-text
-              | ACTOR • MUSICIAN • WRITER
-            a.btn(href='/u/benlawless') Check Out
-      .card.otherprofile
-        .card-header  
-          h5 Enda Fallon
-        .card-body
-          p.card-text
-            | Irish DJ/ Producer. Check out his latest work!
-          a.btn(href='/u/endafallon') Check Out

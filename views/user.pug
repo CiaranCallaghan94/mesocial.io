@@ -3,8 +3,9 @@ extends layout.pug
 block content
   .container-narrow
     .masthead 
-      h3.muted.title 
-        a(href='/') MeSocial
+      a(href='/')
+        img(slot='logo', src='/img/mesocial.png', height='60', width='60')
+        h3.muted.title MeSocial
       if user.verified === true
         i.fas.fa-check.verified
     hr

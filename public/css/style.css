@@ -30,7 +30,7 @@ body {
 }
 /* Main marketing message and sign up button */
 .jumbotron {
-  margin: 50px 0;
+  margin: 50px 0 30px 0;
   text-align: center;
 }
 
@@ -53,11 +53,8 @@ body {
   padding: 10px 20px;
 }
 
-.btn,
-.btn:hover,
-.btn:active,
-.btn:visited {
-  background-color: #e88c15 !important;
+.btn {
+  background-color: #e88c15;
   background-image: none;
   color: white;
 }
@@ -75,17 +72,35 @@ body {
   font-size: 22px;
 }
 
+.verified:hover {
+  opacity: 1;
+}
+
+.home {
+  float: right;
+  display: inline-block;
+  padding: 12px;
+  font-size: 22px;
+}
+
+.home:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.homebutton {
+  margin: auto;
+}
+
 .title {
   display: inline-block;
   margin-top: 12px;
-}
-
-.title a {
+  margin-left: 10px;
   color: #e88c15;
   font-weight: 700;
 }
 
-.title a:hover {
+.title:hover {
   text-decoration: none;
   opacity: 0.7;
 }
@@ -116,19 +131,13 @@ body {
 .otherprofiles {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
   text-align: center;
 }
 
 .otherprofiles p {
   font-weight: 500;
-}
-
-.otherprofile .card-body .btn {
-  width: 70%;
-  font-weight: bold;
-  letter-spacing: 0.0625em;
 }
 
 .description {
@@ -140,6 +149,38 @@ body {
 
 .description-heading {
   margin-bottom: 20px;
+}
+
+.otherprofile .card-header a {
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.otherprofile .card-body {
+  padding: 12px 4px;
+  font: 0.8em;
+}
+
+.otherprofile .card-header h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.button__blue {
+  background-color: #007cb6;
+}
+
+.button__pink {
+  background-color: #e22c6c;
+}
+
+.button__green {
+  background-color: #16ba53;
+}
+
+.button__red {
+  background-color: #bc0000;
 }
 
 .footer {
@@ -170,8 +211,49 @@ body {
   }
 
   .otherprofiles {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+/* searchbar */
+.searchbar {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.searchbar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.searchbar button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Bootstrap Override */
